@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+/*.container {width:1200px;}*/
+
+}
+
+@media (max-width: 1200px) {
+.content, label,
+input, .input-small, .input-medium,  .input-large,  .input-xlarge, select
+.btn, .btn-standard {
+ font-size: 13px;
+ line-height: 1.7em;
+}
+
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+@media screen and (max-width: 480px) {
+
+}

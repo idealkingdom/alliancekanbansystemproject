@@ -1,0 +1,908 @@
+/*
+  * ASI UI 2013
+  * WESLEY AKEEM A. ESPINA
+  * mail.wespina@asi-dev3.com
+  */ 
+
+body {
+ background-color: #fff;
+ min-width:1024px;
+ margin-bottom:90px; /* margin for fixed footer */
+ cursor: default !important;
+}
+	
+h1, h2, h3, h4, h5, h6 {
+ text-shadow: white 0.02em 0.02em;
+ font-family: 'QlassikBold', sans-serif;
+}
+	
+h2 {
+ font-size: 2.3em;
+}
+ 
+.content {
+ font-size: 1.0em;
+ line-height: 1.8em;
+}
+	
+.content p {
+ font-size: 1.0em;
+ line-height: 1.8em;
+ margin-bottom: 1.1em;
+}
+
+#main-menu-tab, #active-tab, #top-btn-panel {
+ font-size:0.8em;
+ outline:none;
+}
+
+hr {border-top:1px solid #CCCCCC; margin:10px 0;}
+
+#login {
+ margin-top:11em;
+ }
+
+/***** NAVIGATION BAR *****/
+
+.navbar { }
+
+.navbar .brand {
+ font-weight: bold;
+ color: white;
+ text-shadow: 0 1px 0 rgba(43, 43, 43, 1), 0 0 30px rgba(43, 43, 43, 1);
+}
+
+.navbar-inner{
+ min-height:40px;
+ padding-right:20px;
+ padding-left:20px;
+ background-color:#1D354D;
+ background-image:-moz-linear-gradient(top,#1D354D,#1D354D);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#1D354D),to(#1D354D));
+ background-image:-webkit-linear-gradient(top,#1D354D,#1D354D);
+ background-image:-o-linear-gradient(top,#1D354D,#1D354D);
+ background-image:linear-gradient(to bottom,#1D354D,#1D354D);
+ background-repeat:repeat-x;
+ border:1px solid #d4d4d4;
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ border-radius:0px;
+ border:1px solid #1D354D;
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
+ *zoom:1;
+  -webkit-box-shadow: none !important; 
+  -moz-box-shadow: none; 
+  box-shadow: none !important;
+}
+
+#nav-list a {
+  color:#fff;
+  text-shadow:0 1px 0 rgba(21, 64, 87, 1), 0 0 30px rgba(21, 64, 87, 1);
+  outline:none;
+}
+#nav-list a:hover {background:#154057;}
+#nav-list a:focus {background:#2B85B5;}
+
+.nav-tabs, .nav-tabs a {border:none; outline:none;}
+
+.nav li {cursor:default;}
+
+#main-menu-tab {
+  padding:1px 10px 2px 10px;
+  color:#fff;
+  text-shadow:0 1px 0 rgba(19, 36, 53, 1), 0 0 1px rgba(19, 36, 53, 1);
+  border-radius:3px 3px 0px 0px;
+  border:#080F15 1px solid;
+  background: ##1D354D;
+  background: -moz-linear-gradient(#233F5C, #182E42);
+  background: -webkit-gradient(linear, left top, left bottom, from(#233F5C), to(#182E42));
+  background: -webkit-linear-gradient(#233F5C, #182E42);
+  background: -o-linear-gradient(#233F5C, #182E42);
+  background: -ms-linear-gradient(#233F5C, #182E42);
+  background: linear-gradient(#233F5C, #182E42);
+   -moz-box-shadow:    inset 0 1px 0px #325B85;
+   -webkit-box-shadow: inset 0 1px 0px #325B85;
+   box-shadow:         inset 0 1px 0px #325B85;
+}
+
+#main-menu-tab:hover {
+ background:#1D354D;
+ -webkit-transition:background 1s ease;
+    -moz-transition:background 1s ease;
+      -o-transition:background 1s ease;
+ transition:background 1s ease;
+ border:#080F15 1px solid;
+  -webkit-box-shadow: inset 0 1px 0px #264665;
+     -moz-box-shadow: inset 0 1px 0px #264665;
+          box-shadow: inset 0 1px 0px #264665;
+}
+
+#active-tab {
+ padding:1px 10px 2px 10px;
+ background:#fff;
+ color:#277DA9;
+}
+
+#active-tab:hover, 
+#active-tab:focus, 
+#active-tab:visited {border:1px solid #fff;}
+
+/* Caret color*/
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-bottom-color: #AFB8C1;
+  border-top-color: #AFB8C1;
+}
+.navbar .nav li.dropdown:hover > .dropdown-toggle .caret {
+  border-bottom-color: #AFB8C1;
+  border-top-color: #AFB8C1;
+}
+
+.top-btn .caret {
+  border-bottom-color: #AFB8C1;
+  border-top-color: #AFB8C1;
+}
+/* Navbar select color */
+.navbar select {
+  background:#F6F6F6;
+  border-color:#F6F6F6;
+  border-radius:3px;
+}
+/* Drop down menu bg color */
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background:#90B9D0;
+}
+
+.dropdown-menu li > a:click {
+  background: none;
+  visibility: none;
+}
+#top-btn-panel {}
+
+.top-btn {
+ border:1px solid #122130;
+ margin-right:5px;
+ margin-top:2px;
+ display:block;
+  -webkit-box-shadow: 0px 1px 0px #325B85;
+     -moz-box-shadow: 0px 1px 0px #325B85;
+          box-shadow: 0px 1px 0px #325B85;
+}
+
+.top-btn a {
+ color:#fff;
+ text-decoration:none;
+ display:block;
+ padding:2px 5px;
+}
+
+#sub-menu-div {
+ border-bottom:1px solid #ccc;
+}
+
+#sub-menu {
+ background:none;
+ border:none;
+ font-size:.8em;
+ padding:4px 20px 4px 4px;
+ outline:none;
+ color:#333;
+}
+
+#sub-menu-div a {
+ border-radius:0px;
+ font-size:.8em;
+}
+
+.title-bar {
+ padding:1px 0px 4px 20px;
+ background-color:#FEFEFE;
+ background-image:-moz-linear-gradient(top,#FEFEFE,#EEEEEE);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#FEFEFE),to(#EEEEEE));
+ background-image:-webkit-linear-gradient(top,#FEFEFE,#EEEEEE);
+ background-image:-o-linear-gradient(top,#FEFEFE,#EEEEEE);
+ background-image:linear-gradient(to bottom,#FEFEFE,#EEEEEE);
+ border-bottom:1px solid #D4D4D4;
+  -moz-box-shadow:    0px 1px 2px #eee;
+  -webkit-box-shadow: 0px 1px 2px #eee;
+  box-shadow:         0px 1px 2px #eee;
+}
+
+.breadcrumb {
+ font-size:.8em;
+ background:none;
+ padding:0px 0px 0px 0px;
+ margin:0px 0px 0px 0px;
+}
+
+.breadcrumb a {color:#666666;}
+
+.title-bar .title {
+ font-size:1.2em;
+ font-weight:bold;
+ padding-top:0px;
+ color:#555;
+ position:relative;
+ top:4px;
+}
+
+/* dropdown hover effect overight */
+.sidebar-nav {
+ padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+ left: 100%;
+ position: absolute;
+ top: 0;
+ visibility: hidden;
+ margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+ visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+ display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+ margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+ border-bottom: 7px solid transparent;
+ border-left: none;
+ border-right: 7px solid rgba(0, 0, 0, 0.2);
+ border-top: 7px solid transparent;
+ left: -7px;
+ top: 10px;
+}
+.navbar .sub-menu:after {
+ border-top: 6px solid transparent;
+ border-left: none;
+ border-right: 6px solid #fff;
+ border-bottom: 6px solid transparent;
+ left: 10px;
+ top: 11px;
+ left: -6px;
+}
+
+.input-header {
+ height:25px;
+ font-size:1.1em;
+}
+
+.btn-go {
+ position:relative;
+ bottom:3px;
+}
+
+/***** BODY *****/
+	
+.page-title {
+ padding: 100px 0 30px 0;
+}
+	
+.arrow-top img {
+ margin: -7px 0 0 15px;
+}
+	
+.content-heading {
+ background:#ccc;
+ background-image:-moz-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#EFEFEF),to(#C6C6C6));
+ background-image:-webkit-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-o-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:linear-gradient(to bottom,#EFEFEF,#C6C6C6);
+ border:1px solid #A8A8A8;
+ border-radius:3px;
+ padding:1px 0px 0px 10px;
+ margin:0px 0px 10px 0px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ font-weight:bold;
+ line-height:25px;
+ color:#333;
+ text-shadow:0px 1px 0px rgba(255,255,255,1);
+}
+	
+.content-subheading {
+ background:#D6D6D6;
+ border-radius:3px;
+ padding:2px 0px 2px 10px;
+ margin:0px 0px 10px 0px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ line-height:25px;
+ color:#333;
+ text-shadow:0px 1px 0px rgba(255,255,255,1);
+}
+
+.btn-standard {
+ font-weight:bold;
+ font-size:0.9em;
+ color: #ffffff !important;
+ text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+ background-color: #F8980F !important;
+ *background-color: #f89406;
+ background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+ background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+ background-image: -o-linear-gradient(top, #fbb450, #f89406);
+ background-image: linear-gradient(to bottom, #fbb450, #f89406);
+ background-repeat: repeat-x;
+ border-color: #f89406 #f89406 #ad6704;
+ border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.fieldset {
+ border:1px solid #A8A8A8;
+ border-radius:3px;
+ min-height:50px;
+ margin-top:10px;
+}
+
+.fieldset-title {
+ background:#ccc;
+ background-image:-moz-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#EFEFEF),to(#C6C6C6));
+ background-image:-webkit-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-o-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:linear-gradient(to bottom,#EFEFEF,#C6C6C6);
+ border:1px solid #A8A8A8;
+ border-radius:3px;
+ padding:8px 10px 8px 10px;
+ margin:0px 0px 20px 0px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ font-weight:bold;
+ line-height:25px;
+ color:#333;
+ text-shadow:0px 1px 0px rgba(255,255,255,1);
+ display:inline;
+ position:relative;
+ top:-13px;
+ left:10px;
+}
+
+.fieldset-content {
+ padding:0px 10px 10px 20px;
+}
+
+.fieldset table {
+}
+
+.fieldset td {
+ margin:0px;
+ padding-right:10px;
+ vertical-align:top;
+}
+
+.input-mask {padding-left:20px;}
+.input-mask td {
+ padding-right:10px;
+ vertical-align:top;
+}
+
+.asterisk {color:#DD1144;}
+
+.table, .table th, .table td {
+ border-color:#A8A8A8;
+ font-size: 14px;
+}
+
+.input-mask td {height:35px;}
+
+.table th {
+ background:#ccc;
+ background-image:-moz-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#EFEFEF),to(#C6C6C6));
+ background-image:-webkit-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:-o-linear-gradient(top,#EFEFEF,#C6C6C6);
+ background-image:linear-gradient(to bottom,#EFEFEF,#C6C6C6);
+ font-size: 13px;
+ font-weight:bold;
+ line-height:25px;
+ color:#333;
+ text-shadow:0px 1px 0px rgba(255,255,255,1);
+ padding-top:0;
+ padding-bottom:0;
+ padding-right:0;
+}
+
+.table-striped {background:#EFF2F8;}
+
+.column-checkbox {width:18px;}
+
+.column-very-small {width:5%}
+
+.column-small {width:15%}
+
+.column-medium {width:20%}
+
+.column-large {width:25%}
+
+.icon-sprite01 {background:url("#{resource['img/sprite-check.png']}"); height:25px; width:25px; display:block;}
+
+.icon-sprite02 {background:url("#{resource['img/sprite-check.png']}"); height:25px; width:25px;}
+
+.column-center, .column-center th, .column-center td {text-align:center;}
+
+.td-center {text-align:center !important;}
+
+.td-left-align {text-align:left !important;}
+
+.td-valign-middle {vertical-align:middle !important;}
+
+.td-valign-middle-narrow {vertical-align:middle !important; max-width:100px;}
+
+.input-narrow {max-width: 100px;}
+
+.icon-yes {background-position:0 0;}
+
+.icon-no {background-position:-25px -0px;}
+
+.icon-no-center {background-position:-25px -0px; vertical-align: middle;}
+
+.alert {padding:5px 30px 5px 10px;}
+
+.profile-detail {
+ background:#1D354D;
+ border-radius:0px 0px 5px 5px;
+ color:#fff;
+ padding:10px;
+}
+
+.profile-detail h2 {
+ font-size:1.2em;
+ padding:0px;
+ margin:0px;
+}
+
+.photo {
+ background:url("#{resource['img/photo_default.png']}") center;
+ background-size:cover;
+ height:20em;}
+
+.sidebar-nav {}
+
+.icon-phone-type {
+ border-radius:3px;
+ background:url("#{resource['img/sprite_phone.png']}") no-repeat;
+ color:#fff;
+ text-transform:uppercase;
+ font-weight:bold;
+ width:25px;
+ height:25px;
+ font-style:normal;
+ text-align:center;
+ position:relative;
+ top:-5px;
+}
+
+.icon-phone-ip {background-position:4px 2px; background-color:#78C47F}
+.icon-no-phone-ip {background-position:4px 2px; background-color:#b94a48}
+
+.inner-indent{padding:9px 15px;}
+
+.icon-ip {background-position:0 -192px;}
+
+.icon-key {background-position:-23px -192px;}
+.icon-lightning {background-position:-48px -192px;}
+
+.icon-report {background-position:-72px -192px;}
+
+.icon-user-group {background-position:-96px -192px;}
+
+.icon-picture {background-position:-120px -192px;}
+
+.icon-radio {background-position:-144px -192px;}
+
+.custom-width-modal {
+ width: 900px;
+ margin-left:-450px;
+}
+
+.custom-xlarge-width-modal {
+ width: 1200px;
+ margin-left:-600px;
+}
+
+.custom-modal-body{
+	position:relative;
+	max-height:800px;
+	padding:15px;
+	overflow-y:auto
+}
+.modal-body-no-maxW{
+	max-width:none !important;
+}
+
+.login-box {
+ border-radius:5px;
+ background:rgba(255, 255, 255, 1);
+ background: -moz-linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 40%);
+ background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(255, 255, 255, 0) 40%));
+ background: -webkit-linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 40%);
+ background: -o-linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 40%);
+ background: -ms-linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 40%);
+ background: linear-gradient(rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 40%);
+ height:400px;
+}
+
+.login-box-inner {
+ margin:30px;
+}
+
+.login-box p {
+ color:#ccc;
+ font-size:.9em;
+ line-height:15px;
+}
+
+.login-box h3 {color:#fff; text-shadow:none;}
+
+ul.paging-list, paging-list li {
+ margin:0px;
+ padding:0px;
+ position:relative;
+ top:-7px;
+ display:inline-block;
+}
+
+.content-tabbing {
+ border-bottom:1px solid #DDDDDD;
+}
+
+.content-tabbing-box {
+     border-radius:0 0 3px 3px;
+ border:1px solid #DDDDDD;
+ border-top:0px;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+    top: -21px;
+}
+
+.folder-list {
+}
+
+.folder-list li:focus {
+ border:1px solid #257DA2;
+ border-radius:3px;
+ background:#C7DEE7;
+ outline:none;
+}
+
+.folder {
+ border:1px solid #fff;
+ display:block;
+ height:100px;
+}
+
+.folder:focus {
+ border:1px solid #91BFE3;
+ border-radius:3px;
+ background:#DBEAF9;
+ outline:none;
+}
+
+.folder-name {
+ position:absolute;
+ text-align:center;
+ width:56px;
+ font-size:10px;
+ line-height:10px;
+ color:#282828;
+ margin-top:3px;
+}
+
+.icon-folder {background:url("#{resource['img/sprite-folder.png']}"); background-position:0 0; width:56px; height:56px;}
+
+.icon-folder-up {background:url("#{resource['img/sprite-folder.png']}"); background-position:-56px 0; width:56px; height:56px;}
+
+.icon-report-group {background:#D27A76 url("#{resource['img/sprite-folder.png']}"); background-position:-112px 0; height:56px; width:56px; border-radius:3px;}
+
+.icon-report-default {background:#72B6CC url("#{resource['img/sprite-folder.png']}"); background-position:-168px 0; height:56px; width:56px; border-radius:3px;}
+
+.icon-report-picture {background:#F5B55A url("#{resource['img/sprite-folder.png']}"); background-position:-224px 0; height:56px; width:56px; border-radius:3px;}
+
+.icon-report-user {background:#5783DC url("#{resource['img/sprite-folder.png']}"); background-position:-280px 0; height:56px; width:56px; border-radius:3px;}
+
+.icon-report-phone {background:#8CC18C url("#{resource['img/sprite-folder.png']}"); background-position:-336px 0; height:56px; width:56px; border-radius:3px;}
+
+li.text {
+	vertical-align: text-bottom;
+}
+.login-box span {}
+.center-icon {
+	margin: 0 auto;
+}
+.clickable-tds:hover{
+	cursor: pointer !important;
+	font-weight:bold;
+	
+}
+.softkeytable td{
+	min-width:50px !important;
+/* 		width: 50px !important; */
+}
+
+.padded-div{
+	padding:9px 15px 0px;
+}
+
+/***** OVERRIDE ****/
+	
+/***** FOOTER *****/
+
+.footer {
+ background:#DADAE0;
+ font-size: 0.85em;
+ line-height: 1.5em;
+ padding: 20px 0;
+ position:fixed;
+ bottom:0px;
+ display:block;
+ width:100%;
+ z-index:900;
+}
+
+.footer-fader {
+ position:fixed;
+ width:100%;
+ bottom:57px;
+ z-index:100;
+ height:30px;
+ background: #1D354D;
+ background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+ background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+ background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+ background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+ background: -ms-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+ background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+#copyright {
+ float:left;
+ padding-left:10px;
+}
+
+/***** OTHERS ****/
+
+.padding-none {padding:0 0px 0 0px;}
+.pad-sides-10 {padding:0 10px 0 10px;}
+.pad-all-5 {padding:5px;}
+.pad-all-10 {padding:10px;}
+.clear-10 {clear:both; padding-top:10px;}
+.margin-none {margin:0px;}
+.dotted {border-style:dotted;}
+/*****ADDITION*****/
+
+.tiptext {
+ font-size:.8em;
+ color:#999;
+}
+
+/****SMOOTH DIV SCROLL****/
+#makeMeScrollable
+{
+	width:100%;
+	height: 27px;
+	position: relative;
+}
+
+#makeMeScrollable div.scrollableArea img
+{
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.submenu-container-width {width:1900px;}
+
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft
+{
+	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+    and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+	min-width: 75px;
+	width: 10%;
+	height: 27px;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background-image: url("#{resource['img/big_transparent.gif']}");
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	cursor: url("#{resource['img/cursors/cursor_arrow_left.png']}"), url("#{resource['img/cursors/cursor_arrow_left.cur']}"),w-resize;
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background-image: url("#{resource['img/arrow_left.gif']}");				
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35; /* Standard CSS3 opacity setting */
+	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	min-width: 75px;
+	width: 10%;
+	height: 27px;
+	background-image: url("#{resource['img/big_transparent.gif']}");
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	cursor: url("#{resource['img/cursors/cursor_arrow_right.png']}"), url("#{resource['img/cursors/cursor_arrow_right.cur']}"),e-resize;
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background-image: url("#{resource['img/arrow_right.gif']}");
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+	filter: alpha(opacity = 35);
+	-moz-opacity: 0.35;
+	zoom: 1;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+
+
+/*****ADDITION*****/
+
+.tiptext {
+ font-size:.8em;
+ color:#999;
+}
+
+/****SMOOTH DIV SCROLL****/
+#makeMeScrollable
+{
+	width:100%;
+	height: 27px;
+	position: relative;
+}
+
+#makeMeScrollable div.scrollableArea img
+{
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.submenu-container-width {width:1900px;}
+
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft
+{
+	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+    and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+	min-width: 75px;
+	width: 10%;
+	height: 27px;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background-image: url("#{resource['img/big_transparent.gif']}");
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	cursor: url("#{resource['img/cursors/cursor_arrow_left.png']}"), url("#{resource['img/cursors/cursor_arrow_left.cur']}"),w-resize;
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background-image: url("#{resource['img/arrow_left.gif']}");				
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35; /* Standard CSS3 opacity setting */
+	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	min-width: 75px;
+	width: 10%;
+	height: 27px;
+	background-image: url("#{resource['img/big_transparent.gif']}");
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	cursor: url("#{resource['img/cursors/cursor_arrow_right.png']}"), url("#{resource['img/cursors/cursor_arrow_right.cur']}"),e-resize;
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background-image: url("#{resource['img/arrow_right.gif']}");
+	background-color: #fff;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+	filter: alpha(opacity = 35);
+	-moz-opacity: 0.35;
+	zoom: 1;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+.cursor_pointer {
+	cursor: pointer !important;
+}
+.btn-mini { 
+ font-size: 11px;
+ height:22px;
+}
+.span:first-child{-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px}	

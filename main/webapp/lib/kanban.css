@@ -1,0 +1,41 @@
+   <style>
+        #board {
+            display: table;
+            margin: 0;
+            padding: 0;
+            border-spacing: 5px;
+            margin-top: 900px;
+        }
+        .section {
+            display: table-cell;
+            margin: 0;
+            border: 1px solid #666;
+            padding: 5px;
+            width: 300px;
+            overflow: scroll;
+        }
+        .section.droppable {
+            border: 1px dashed #666;
+        }
+        .section > h1 {
+            margin: 0;
+            border-bottom: 1px solid #999;
+            padding: 0;
+            font-size: 12pt;
+            text-align: center;
+        }
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px 5px;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            color: black;
+            background: #ff8;
+            cursor: move;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            box-shadow: 2px 2px 2px #eee;
+        }
+    </style>
